@@ -1,0 +1,37 @@
+<%- include ("_head.ejs") %>
+
+  <body>
+    
+      <%- include ("_nav.ejs") %>
+     
+      <div class="projects-wrapper ">
+        <input type="text" placeholder="Search ..." class="inputSearch" onChange={handleSearch} />
+
+        <div class="projects-cards-wrapper">
+    <% womenArticels.forEach(articel=> { %>
+            <div key={index} class="project-card">
+              <a href="/articel/<%=articel.id %>" target="_blank"><img src="<%=articel.imageURL%>" alt="hjk"></a>
+              <div class="image-description">
+                <p>
+                  <%=articel.imageDescription%>
+                </p>
+              </div>
+              <!-- <%=articel.id %> -->
+              <div class="container">
+                <!-- <button class="icon">
+            <FaShoppingCart />
+          </button> -->
+                <p class="price">
+                  <%=articel.thePrice%>
+                </p>
+              </div>
+            <!-- <%=articel.gender %> -->
+          </div>
+          <% }) %>
+      </div>
+    
+      
+
+  </body>
+
+  </html>

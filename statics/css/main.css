@@ -1,0 +1,120 @@
+body{
+  padding: 0px;
+  margin:0px;
+  
+}
+.navbar-wrapper {
+  width: 100%;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+}
+ul {
+    background-color: black;
+    min-width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;
+  }
+    li {
+      position: relative;
+    }
+    li::after {
+      width: 1px;
+      background-color: white;
+      content: "";
+      position: absolute;
+      height: 100%;
+      margin: 0 10px;
+    }
+    li a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+    li a:hover {
+      color: rgb(60, 21, 199);
+    }
+    .selected {
+      color: rgb(60, 21, 199);
+    }
+
+    .projects-wrapper {
+      color: white;
+      display: flex;
+      flex-direction: column; 
+       justify-content: center;
+      max-width: 100%;
+      min-height: 70vh;
+      padding: 20px 50px;
+
+      
+      
+    }
+    .inputSearch{
+      width: 500px;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: #f1f5f8;
+      border: 1px solid blue;
+      border-radius: 0.25rem;
+    }
+    .projects-cards-wrapper {
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      min-height: 50vh;
+      
+      
+    }
+    
+      .project-card {
+        border: solid 1px black;
+        background-color: white;
+        width: 17%;
+        height: 500px;
+        margin: 5px;
+        
+      }
+      .image-description {
+        border-top: 1px solid rgb(78, 77, 77);
+        color: rgb(82, 89, 122);
+        padding: 8px;
+        height: 50px;
+        font-size: 0.85rem;
+      }
+      
+        .price {
+          font-size: large;
+          margin: -20px 5px 0 auto;
+          width: fit-content;
+          color: rgb(255, 78, 8);
+        }
+        .icon {
+          color: rgba(74, 74, 77, 0.804);
+          width: 50px;
+          font-size: 20px;
+          margin-left: 5px;
+          border: none;
+        }
+        img {
+          width: 100%;
+          height: 80%;
+        }
+.form{
+  margin: 100px;
+  height: 400px;
+  width: 600px;
+  background-color:rgb(173, 172, 172);
+  padding: 20px;
+}
+label{
+  margin:20px;
+}
